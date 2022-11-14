@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "just-func-webapp",
+      "path": "."
+    },
+    {
+      "name": "just-web-react",
+      "path": "../just-web-react"
+    },
+    {
+      "name": "just-web",
+      "path": "../just-web"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "**/common/config/rush/*.json": "jsonc",
+      "*.scss": "postcss",
+      "common/git-hooks/*": "shell",
+      "rush.json": "jsonc"
+    }
+  }
+}

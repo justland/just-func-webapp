@@ -225,7 +225,7 @@ importers:
       '@types/jest': ^27.4.1
       autoprefixer: ~10.4.4
       babel-loader: ~8.3.0
-      babel-preset-solid: ~1.5.0
+      babel-preset-solid: ~1.6.0
       depcheck: ~1.4.3
       eslint: ^8.11.0
       fuse.js: ~6.6.0
@@ -273,7 +273,7 @@ importers:
       '@types/jest': 27.5.2
       autoprefixer: 10.4.7_postcss@8.4.14
       babel-loader: 8.3.0_jzdsusohi23wobhstm6lj7n7ui
-      babel-preset-solid: 1.5.7_@babel+core@7.20.2
+      babel-preset-solid: 1.6.2_@babel+core@7.20.2
       depcheck: 1.4.3
       eslint: 8.17.0
       identity-obj-proxy: 3.0.0
@@ -8074,8 +8074,8 @@ packages:
       '@types/babel__traverse': 7.17.1
     dev: true
 
-  /babel-plugin-jsx-dom-expressions/0.34.11_@babel+core@7.20.2:
-    resolution: {integrity: sha512-pXygym8znJC/WiozMVA5R/8keu5j6kTZEVJjJi2tjnQrUHsm9JMbXQw8QjLZSW0oxU601rsutb1TlECdBAvfJQ==}
+  /babel-plugin-jsx-dom-expressions/0.35.4_@babel+core@7.20.2:
+    resolution: {integrity: sha512-Ab8W+36+XcNpyb644K537MtuhZRssgE3hmZD/08a1Z99Xfnd38tR2BZaDl7yEQvvHrb46N+eje2YjIg4VGAfVQ==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
@@ -8260,13 +8260,13 @@ packages:
       - supports-color
     dev: true
 
-  /babel-preset-solid/1.5.7_@babel+core@7.20.2:
-    resolution: {integrity: sha512-BUE7SOawUNMcw4QDJHWSRWAzmzZKoYNuduAKx8GfdaUhtW+50LTh2ZkHXEPZiQrSpxmvT0zP7e1cKnTYN6iiqw==}
+  /babel-preset-solid/1.6.2_@babel+core@7.20.2:
+    resolution: {integrity: sha512-5sFI34g7Jtp4r04YFWkuC1o+gnekBdPXQTJb5/6lmxi5YwzazVgKAXRwEAToC3zRaPyIYJbZUVLpOi5mDzPEuw==}
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
       '@babel/core': 7.20.2
-      babel-plugin-jsx-dom-expressions: 0.34.11_@babel+core@7.20.2
+      babel-plugin-jsx-dom-expressions: 0.35.4_@babel+core@7.20.2
     dev: true
 
   /bail/1.0.5:
@@ -21488,7 +21488,7 @@ packages:
     dependencies:
       '@babel/core': 7.20.2
       '@babel/preset-typescript': 7.18.6_@babel+core@7.20.2
-      babel-preset-solid: 1.5.7_@babel+core@7.20.2
+      babel-preset-solid: 1.6.2_@babel+core@7.20.2
       merge-anything: 5.0.2
       solid-js: 1.4.3
       solid-refresh: 0.4.0_solid-js@1.4.3

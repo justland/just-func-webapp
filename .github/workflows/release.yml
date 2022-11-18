@@ -5,7 +5,7 @@ on:
 
 jobs:
   code:
-    uses: justland/.github/.github/workflows/pnpm-verify-linux.yml@main
+    uses: justland/.github/.github/workflows/pnpm-verify.yml@main
     with:
       node-version: "[18]"
   # release:

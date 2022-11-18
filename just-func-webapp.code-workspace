@@ -9,10 +9,15 @@
       "path": "../just-web-react"
     },
     {
+      "name": "just-web-solid",
+      "path": "../just-web-solid"
+    },
+    {
       "name": "just-web",
       "path": "../just-web"
     },
     {
+      "name": ".github",
       "path": "../.github"
     }
   ],

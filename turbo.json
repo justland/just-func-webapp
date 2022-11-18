@@ -4,9 +4,6 @@
     "build": {
       "dependsOn": [
         "^build"
-      ],
-      "outputs": [
-        "lib/**"
       ]
     },
     "clean": {
@@ -15,9 +12,6 @@
     "coverage": {
       "dependsOn": [
         "^build"
-      ],
-      "outputs": [
-        "coverage/**"
       ]
     },
     "depcheck": {
@@ -34,7 +28,10 @@
       ]
     },
     "nuke": {
-      "cache": false
+      "cache": false,
+      "dependsOn": [
+        "clean"
+      ]
     },
     "size": {
       "dependsOn": [
@@ -45,9 +42,6 @@
       "dependsOn": [
         "^build"
       ]
-    },
-    "verify": {
-      "dependsOn": ["build", "lint", "coverage", "depcheck", "size"]
     }
   }
 }

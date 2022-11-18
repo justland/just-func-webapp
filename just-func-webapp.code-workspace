@@ -11,6 +11,9 @@
     {
       "name": "just-web",
       "path": "../just-web"
+    },
+    {
+      "path": "../.github"
     }
   ],
   "settings": {

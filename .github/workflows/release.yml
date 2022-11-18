@@ -6,11 +6,12 @@ on:
 jobs:
   code:
     uses: justland/.github/.github/workflows/pnpm-verify-linux.yml@main
-
-  release:
-    uses: justland/.github/.github/workflows/pnpm-release-changeset.yml@main
-    needs: code
-    secrets: inherit
+    with:
+      node-version: "[18]"
+  # release:
+  #   uses: justland/.github/.github/workflows/pnpm-release-changeset.yml@main
+  #   needs: code
+  #   secrets: inherit
 
   # docgen:
   #     uses: justland/.github/.github/workflows/pnpm-docs.yml@main

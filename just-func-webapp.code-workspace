@@ -17,6 +17,10 @@
       "path": "../just-web"
     },
     {
+      "name": "just-func-typescript",
+      "path": "../just-func-typescript"
+    },
+    {
       "name": ".github",
       "path": "../.github"
     }
@@ -27,6 +31,7 @@
       "*.scss": "postcss",
       "common/git-hooks/*": "shell",
       "rush.json": "jsonc"
-    }
+    },
+    "typescript.tsdk": "just-func-webapp\\node_modules\\typescript\\lib"
   }
 }

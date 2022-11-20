@@ -5,4 +5,6 @@ packages:
   - libraries/*
   - plugins/*
   - presets/*
+  - react/*
+  - solid/*
   - tools/*

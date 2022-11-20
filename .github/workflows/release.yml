@@ -7,7 +7,9 @@ jobs:
   code:
     uses: justland/.github/.github/workflows/pnpm-verify.yml@main
     with:
-      node-version: "[18]"
+      os: '["ubuntu-latest"]'
+      node-version: '[18]'
+
   # release:
   #   uses: justland/.github/.github/workflows/pnpm-release-changeset.yml@main
   #   needs: code

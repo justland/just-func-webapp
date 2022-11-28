@@ -64,7 +64,7 @@
     "@babel/core": "~7.20.0",
     "@babel/plugin-syntax-flow": "~7.18.0",
     "@babel/plugin-transform-react-jsx": "~7.19.0",
-    "@just-web/repo-scripts": "^0.1.1",
+    "@just-web/repo-scripts": "^0.2.0",
     "@storybook/addon-actions": "~6.5.0",
     "@storybook/addon-essentials": "~6.5.0",
     "@storybook/addon-interactions": "~6.5.0",

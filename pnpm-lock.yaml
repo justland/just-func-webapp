@@ -30,7 +30,7 @@ importers:
       '@babel/plugin-syntax-flow': ~7.18.0
       '@babel/plugin-transform-react-jsx': ~7.19.0
       '@headlessui/react': ~1.7.0
-      '@just-web/app': ^4.0.1
+      '@just-web/app': ^5.0.0
       '@just-web/browser': ^4.0.1
       '@just-web/browser-keyboard': ^4.0.1
       '@just-web/commands': ^4.0.1
@@ -106,17 +106,17 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@headlessui/react': 1.7.3_sfoxds7t5ydpegc3knd667wn6m
-      '@just-web/app': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/browser': 4.0.1_7gqn7hwbh5twh7hlywmjs37hei
-      '@just-web/browser-keyboard': 4.0.1_q2wdjj5y6ylqf67wifhijzkqme
-      '@just-web/commands': 4.0.1_fwzx7p6myv4xbddtw65zfujysq
-      '@just-web/keyboard': 4.0.1_vthlefc3zo6hyka7x5tx47filu
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/os': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/react': 4.0.1_nxxfjorx6d34mmnmjstlgyi3ii
-      '@just-web/react-commands': 5.0.1_zofd6uv4prkp2pqw2jqddujwcq
-      '@just-web/routes': 4.0.1_vdbq3b7pxzhotnamjq5ywvqabe
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
+      '@just-web/app': 5.0.0_@just-web+log@4.0.1
+      '@just-web/browser': 4.0.1_gajwhdqk3x2nqenxc7hapg3bwe
+      '@just-web/browser-keyboard': 4.0.1_g6zhytxawsiymspu7slkmn3vky
+      '@just-web/commands': 4.0.1_l4idjsa4wzjxfxhwptsgwr52yu
+      '@just-web/keyboard': 4.0.1_4pdqaf636etw35caoigcxvumvi
+      '@just-web/log': 4.0.1
+      '@just-web/os': 4.0.1_@just-web+log@4.0.1
+      '@just-web/react': 4.0.1_ehnc6nfsyzemek3mo5wuwfv6e4
+      '@just-web/react-commands': 5.0.1_qhjcsrqxd4khva6cmbkpidijd4
+      '@just-web/routes': 4.0.1_q2pkta3v6ynsidjhplujyuiaxa
+      '@just-web/states': 4.0.1
       codemirror: 5.65.5
       react: 17.0.2
       react-codemirror2-react-17: 1.0.0_uwulx3m5oxu46iwgjw3mfbw2eu
@@ -2918,22 +2918,21 @@ packages:
   /@just-func/types/0.4.0:
     resolution: {integrity: sha512-JsBoSndz/rN/cmBgUC9DOFyWdMMJzBwEcaNnayZgzZ30mRnQVKEot5Xqy6X3Cc3+RwAmrowQFudLGTH3kfzXxA==}
     dependencies:
-      type-plus: 4.16.0
+      type-plus: 4.18.0
     dev: false
 
-  /@just-web/app/4.0.1_4ntelymd27m3scinxu4zjd2mqi:
-    resolution: {integrity: sha512-R1PUmO+nNi5xtJhcNRtaB2iApu/8s1sO8V9FoubE0DplH9oXqRnYlc2wuHBpPmUXdqLHHeq1qCsvW9nJDiEkIQ==}
+  /@just-web/app/5.0.0_@just-web+log@4.0.1:
+    resolution: {integrity: sha512-sIqlzirBw6aSMJUxJpKxPuVxkuEcpqcp+eBiL3YMiW8YR/NqmcJXE62iKooaYEs6ozgFy/FfhrzsMLotmSIXBQ==}
     peerDependencies:
-      '@just-web/log': ^4.0.1
-      '@just-web/types': ^4.0.1
+      '@just-web/log': ^5.0.0
+      '@just-web/types': ^5.0.0
     dependencies:
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
-      iso-error: 4.4.0
-      type-plus: 4.16.0
+      '@just-web/log': 4.0.1
+      iso-error: 5.0.0
+      type-plus: 4.18.0
     dev: false
 
-  /@just-web/browser-keyboard/4.0.1_q2wdjj5y6ylqf67wifhijzkqme:
+  /@just-web/browser-keyboard/4.0.1_g6zhytxawsiymspu7slkmn3vky:
     resolution: {integrity: sha512-dgqtQ2GqRvRclHGMBwa1V2EMwCYKt4GDuasytAq3bhpFkRqgrQcJEdF0qjxxamWTJjO/ExnmvUrEvnd79ftmEw==}
     peerDependencies:
       '@just-web/commands': ^4.0.1
@@ -2942,30 +2941,28 @@ packages:
       '@just-web/os': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/commands': 4.0.1_fwzx7p6myv4xbddtw65zfujysq
-      '@just-web/keyboard': 4.0.1_vthlefc3zo6hyka7x5tx47filu
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/os': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/types': 4.0.1
+      '@just-web/commands': 4.0.1_l4idjsa4wzjxfxhwptsgwr52yu
+      '@just-web/keyboard': 4.0.1_4pdqaf636etw35caoigcxvumvi
+      '@just-web/log': 4.0.1
+      '@just-web/os': 4.0.1_@just-web+log@4.0.1
       mousetrap: 1.6.5
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/browser/4.0.1_7gqn7hwbh5twh7hlywmjs37hei:
+  /@just-web/browser/4.0.1_gajwhdqk3x2nqenxc7hapg3bwe:
     resolution: {integrity: sha512-OI2kqb3GhPqmGYXtUUm9LHMXspyL6Xa6PJRBYk2qsW0X4K9l0zD27YM8vAJwHJVKngtIl4GW0R92f91HYqRmXw==}
     peerDependencies:
       '@just-web/log': ^4.0.1
       '@just-web/states': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/log': 4.0.1
+      '@just-web/states': 4.0.1
       iso-error: 4.4.0
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/commands/4.0.1_fwzx7p6myv4xbddtw65zfujysq:
+  /@just-web/commands/4.0.1_l4idjsa4wzjxfxhwptsgwr52yu:
     resolution: {integrity: sha512-7mBDEyZ6e6i1U9lXidrLIoXCW57WTloIOUOSGkTjVpKU9s7gsBNIWGBZ6DkafYjenDXqjw419ZpFt28D68YABA==}
     peerDependencies:
       '@just-web/keyboard': ^4.0.1
@@ -2973,17 +2970,16 @@ packages:
       '@just-web/states': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/keyboard': 4.0.1_vthlefc3zo6hyka7x5tx47filu
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/keyboard': 4.0.1_4pdqaf636etw35caoigcxvumvi
+      '@just-web/log': 4.0.1
+      '@just-web/states': 4.0.1
       just-func: 0.2.3
       sentence-case: 3.0.4
       tersify: 3.10.2
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/keyboard/4.0.1_vthlefc3zo6hyka7x5tx47filu:
+  /@just-web/keyboard/4.0.1_4pdqaf636etw35caoigcxvumvi:
     resolution: {integrity: sha512-xaeEJ5XFHuFKivRN+39tTIjVKkiIZkcYy/luwWah8iQwvy4j66zCEl52pOTd/jWyumsjg6trgkJOmpHc9w2AAw==}
     peerDependencies:
       '@just-web/log': ^4.0.1
@@ -2991,36 +2987,33 @@ packages:
       '@just-web/states': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/os': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/log': 4.0.1
+      '@just-web/os': 4.0.1_@just-web+log@4.0.1
+      '@just-web/states': 4.0.1
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/log/4.0.1_@just-web+types@4.0.1:
+  /@just-web/log/4.0.1:
     resolution: {integrity: sha512-6UlcjSHYP68coFUegTcIyosInRKkMIN9Vpa4/x58PqUGNkNAJGAH0UHn4v8ArnZ62SleQxfjsOSOUZMejB1TtA==}
     peerDependencies:
       '@just-web/types': ^4.0.1
     dependencies:
       '@just-func/types': 0.4.0
-      '@just-web/types': 4.0.1
       standard-log: 11.2.2
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/os/4.0.1_4ntelymd27m3scinxu4zjd2mqi:
+  /@just-web/os/4.0.1_@just-web+log@4.0.1:
     resolution: {integrity: sha512-PC/yprn3rXS0QFJHX8wjFiwNYGa+q36YxomxSva61VnUiYxo50fIMjMWIazE/y0a/B1045ptEbm3bohsrF4zKg==}
     peerDependencies:
       '@just-web/log': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/log': 4.0.1
       platform: 1.3.6
     dev: false
 
-  /@just-web/preferences/4.0.1_xm37p2de2mnpnm37cntxo2rsvi:
+  /@just-web/preferences/4.0.1_k63y5r7oduyobsuzbajpgqh2aq:
     resolution: {integrity: sha512-vNH6TGqqmgCTlfmTGnDW1o54BtqzxdUfAK/fgqSmLQlDflLyjvFhUWu9Aj+qeW6AKVmC/lrLxfNwM9C/FSb9Ww==}
     requiresBuild: true
     peerDependencies:
@@ -3029,15 +3022,14 @@ packages:
       '@just-web/log': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/commands': 4.0.1_fwzx7p6myv4xbddtw65zfujysq
-      '@just-web/keyboard': 4.0.1_vthlefc3zo6hyka7x5tx47filu
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/commands': 4.0.1_l4idjsa4wzjxfxhwptsgwr52yu
+      '@just-web/keyboard': 4.0.1_4pdqaf636etw35caoigcxvumvi
+      '@just-web/log': 4.0.1
+      '@just-web/states': 4.0.1
     dev: false
     optional: true
 
-  /@just-web/react-commands/5.0.1_zofd6uv4prkp2pqw2jqddujwcq:
+  /@just-web/react-commands/5.0.1_qhjcsrqxd4khva6cmbkpidijd4:
     resolution: {integrity: sha512-cST0O809RKX/StCuGbNOpJXcKziCXA4WePL9JIglPhDwcyqrHDuHymtlmLicIvs+HdIPNi88H2zlEByBf0F22A==}
     peerDependencies:
       '@just-web/app': ^4.0.1
@@ -3050,22 +3042,21 @@ packages:
       '@just-web/states': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/app': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/browser-keyboard': 4.0.1_q2wdjj5y6ylqf67wifhijzkqme
-      '@just-web/commands': 4.0.1_fwzx7p6myv4xbddtw65zfujysq
-      '@just-web/keyboard': 4.0.1_vthlefc3zo6hyka7x5tx47filu
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/os': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/react': 4.0.1_nxxfjorx6d34mmnmjstlgyi3ii
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/app': 5.0.0_@just-web+log@4.0.1
+      '@just-web/browser-keyboard': 4.0.1_g6zhytxawsiymspu7slkmn3vky
+      '@just-web/commands': 4.0.1_l4idjsa4wzjxfxhwptsgwr52yu
+      '@just-web/keyboard': 4.0.1_4pdqaf636etw35caoigcxvumvi
+      '@just-web/log': 4.0.1
+      '@just-web/os': 4.0.1_@just-web+log@4.0.1
+      '@just-web/react': 4.0.1_ehnc6nfsyzemek3mo5wuwfv6e4
+      '@just-web/states': 4.0.1
       react: 17.0.2
       react-command-palette: 0.21.1_sfoxds7t5ydpegc3knd667wn6m
       react-dom: 17.0.2_react@17.0.2
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/react/4.0.1_nxxfjorx6d34mmnmjstlgyi3ii:
+  /@just-web/react/4.0.1_ehnc6nfsyzemek3mo5wuwfv6e4:
     resolution: {integrity: sha512-pcoRJ9/QwEsOeAv9VUsHmAQrZ0Ng3QLfmDpI8FzUT8DI4earZl2+VPohZCLBenLnRwPR67Q1Knhk/faTRGzMuA==}
     peerDependencies:
       '@just-web/app': ^4.0.1
@@ -3074,14 +3065,13 @@ packages:
       '@just-web/types': ^4.0.1
       react: '>= 16.8.0'
     dependencies:
-      '@just-web/app': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/app': 5.0.0_@just-web+log@4.0.1
+      '@just-web/log': 4.0.1
+      '@just-web/states': 4.0.1
       react: 17.0.2
       type-plus: 4.16.0
     optionalDependencies:
-      '@just-web/preferences': 4.0.1_xm37p2de2mnpnm37cntxo2rsvi
+      '@just-web/preferences': 4.0.1_k63y5r7oduyobsuzbajpgqh2aq
     transitivePeerDependencies:
       - '@just-web/commands'
       - '@just-web/keyboard'
@@ -3121,7 +3111,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@just-web/routes/4.0.1_vdbq3b7pxzhotnamjq5ywvqabe:
+  /@just-web/routes/4.0.1_q2pkta3v6ynsidjhplujyuiaxa:
     resolution: {integrity: sha512-SHEp+mV0Fjj3QDNiWukpmZupgWb2MVT0e5+eytGJfWOcdMVjuLGmpVZL629/b8ik2db9EY4AVojtg1JDGOaTrQ==}
     peerDependencies:
       '@just-web/app': ^4.0.1
@@ -3129,26 +3119,21 @@ packages:
       '@just-web/states': ^4.0.1
       '@just-web/types': ^4.0.1
     dependencies:
-      '@just-web/app': 4.0.1_4ntelymd27m3scinxu4zjd2mqi
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
-      '@just-web/states': 4.0.1_@just-web+types@4.0.1
-      '@just-web/types': 4.0.1
+      '@just-web/app': 5.0.0_@just-web+log@4.0.1
+      '@just-web/log': 4.0.1
+      '@just-web/states': 4.0.1
       type-plus: 4.16.0
     dev: false
 
-  /@just-web/states/4.0.1_@just-web+types@4.0.1:
+  /@just-web/states/4.0.1:
     resolution: {integrity: sha512-9Y+OxKDNYSdf70tYN8cnD0FSzq2SBNkYi5KXa4dpCKzUYHTD9V+vjHItauJrpmH9exb8ls7w99aZb0+wx/cQ/A==}
     dependencies:
-      '@just-web/log': 4.0.1_@just-web+types@4.0.1
+      '@just-web/log': 4.0.1
       immer: github.com/unional/immer/b74706f08e74afffb4ccadf628d12348e811af17
       tersify: 3.10.2
       type-plus: 4.16.0
     transitivePeerDependencies:
       - '@just-web/types'
-    dev: false
-
-  /@just-web/types/4.0.1:
-    resolution: {integrity: sha512-h7Wvg3YiPBTU4r/hOwJEKnFlgzm3YidOI1iYbpTLW3Zot+X6gfAa0GLuHvhMeMFsUtPsHq2mPL7MB8YdBKsAjw==}
     dev: false
 
   /@leichtgewicht/ip-codec/2.0.4:
@@ -13851,6 +13836,11 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
+  /iso-error/5.0.0:
+    resolution: {integrity: sha512-+AhfqtuERYVT+weWCewUQNA0wqcL66OSfPcX5ojnrOSa/V051QFLHK3XlxTyH/fyk1k6TMfE4QDkESAnnvihOw==}
+    engines: {node: '>= 10'}
+    dev: false
+
   /isobject/2.1.0:
     resolution: {integrity: sha512-+OUdGJlgjOBZDfxnDjYYG6zp487z0JGNQq3cYQYg5f5hKR+syHMsaztzGeml/4kGG55CSpKSpWTY+jYGgsHLgA==}
     engines: {node: '>=0.10.0'}
@@ -14910,7 +14900,7 @@ packages:
     resolution: {integrity: sha512-Rb/dLVchcrT2Fzbn6Ibshn4E3tGRTHomSqStpvpcYJZcnrk8mfe404MkrSMas/lkD6ntqv4yPV1lQFMtwNmguA==}
     dependencies:
       '@just-func/types': 0.4.0
-      type-plus: 4.16.0
+      type-plus: 4.18.0
     dev: false
 
   /keyv/4.5.0:
@@ -20232,7 +20222,7 @@ packages:
       '@just-func/types': 0.4.0
       iso-error: 4.4.0
       ms: 2.1.3
-      type-plus: 4.16.0
+      type-plus: 4.18.0
       upper-case: 2.0.2
     dev: false
 
@@ -21308,6 +21298,13 @@ packages:
 
   /type-plus/4.16.0:
     resolution: {integrity: sha512-JSfonNaQ7K/8H7F89+xkAcOGIiTUcyO3Unm8qC6/bfVAGgQBiOFBY131Ag56qp9GOAVpo134xm7jJn6GmLhjcg==}
+    dependencies:
+      tersify: 3.10.2
+      unpartial: 1.0.4
+    dev: false
+
+  /type-plus/4.18.0:
+    resolution: {integrity: sha512-Hds5neDmogRcQheEmdjbEqVq/cE9UUdd9Ic7eCRI2/AzUH1JB+0ha3Hb3Spn2m1PQRBA61kNjbgSLaljNp0L9Q==}
     dependencies:
       tersify: 3.10.2
       unpartial: 1.0.4

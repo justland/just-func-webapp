@@ -61,9 +61,9 @@
     "web-vitals": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "~7.20.0",
-    "@babel/plugin-syntax-flow": "~7.18.0",
-    "@babel/plugin-transform-react-jsx": "~7.19.0",
+    "@babel/core": "~7.24.0",
+    "@babel/plugin-syntax-flow": "~7.24.0",
+    "@babel/plugin-transform-react-jsx": "~7.23.0",
     "@just-web/repo-scripts": "^0.1.1",
     "@storybook/addon-actions": "~6.5.0",
     "@storybook/addon-essentials": "~6.5.0",

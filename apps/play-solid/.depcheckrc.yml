@@ -1,5 +1,10 @@
+ignorePatterns:
+  - ".storybook/**"
 ignores:
   - "@babel/plugin-syntax-flow"
+  - autoprefixer
+  - postcss
+  - postcss-flexbugs-fixes
   - "@babel/plugin-transform-react-jsx"
   - "@storybook/*"
   - "@testing-library/*"

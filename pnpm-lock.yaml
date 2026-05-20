@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@babel/plugin-syntax-import-attributes': 7.24.7
+
 importers:
 
   .:
@@ -755,8 +758,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/plugin-syntax-import-attributes@7.28.6':
-    resolution: {integrity: sha512-jiLC0ma9XkQT3TKJ9uYvlakm66Pamywo+qwL+oL8HJOvc6TWdZXVfhqJr8CCzbSGUAbDOzlGHJC1U+vRfLQDvw==}
+  '@babel/plugin-syntax-import-attributes@7.24.7':
+    resolution: {integrity: sha512-hbX+lKKeUMGihnK8nvKqmXBInriT3GVjzXKFriV3YC6APGxMbP8RZNFwy91+hocLXq90Mta+HshoB31802bb8A==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -12126,7 +12129,7 @@ snapshots:
   '@babel/plugin-proposal-object-rest-spread@7.12.1(@babel/core@7.12.9)':
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.28.6
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.12.9)
       '@babel/plugin-transform-parameters': 7.27.7(@babel/core@7.12.9)
 
@@ -12228,7 +12231,7 @@ snapshots:
       '@babel/core': 7.20.12
       '@babel/helper-plugin-utils': 7.28.6
 
-  '@babel/plugin-syntax-import-attributes@7.28.6(@babel/core@7.20.12)':
+  '@babel/plugin-syntax-import-attributes@7.24.7(@babel/core@7.20.12)':
     dependencies:
       '@babel/core': 7.20.12
       '@babel/helper-plugin-utils': 7.28.6
@@ -17646,7 +17649,7 @@ snapshots:
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.20.12)
       '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.20.12)
       '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.20.12)
-      '@babel/plugin-syntax-import-attributes': 7.28.6(@babel/core@7.20.12)
+      '@babel/plugin-syntax-import-attributes': 7.24.7(@babel/core@7.20.12)
       '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.20.12)
       '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.20.12)
       '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.20.12)
@@ -19991,7 +19994,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.3.4
+      debug: 4.4.3
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:

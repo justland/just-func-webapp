@@ -8,3 +8,8 @@ packages:
   - react/*
   - solid/*
   - tools/*
+allowBuilds:
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+  puppeteer: true

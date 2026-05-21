@@ -6,9 +6,9 @@ export type User = {
 }
 
 export interface HeaderProps {
-  user?: User,
-  onLogin: () => void,
-  onLogout: () => void,
+  user?: User
+  onLogin: () => void
+  onLogout: () => void
   onCreateAccount: () => void
 }
 

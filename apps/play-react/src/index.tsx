@@ -1,11 +1,12 @@
-import { createApp } from '@just-web/app'
-import browserPlugin from '@just-web/browser'
-import browserKeyboardPlugin from '@just-web/browser-keyboard'
-import commandsPlugin from '@just-web/commands'
-import keyboardPlugin from '@just-web/keyboard'
+import { justApp } from '@just-web/app'
+import { browserGizmoFn } from '@just-web/browser'
+import { browserKeyboardGizmo } from '@just-web/browser-keyboard'
+import { commandsGizmoFn } from '@just-web/commands'
+import { keyboardGizmoFn } from '@just-web/keyboard'
 import { logLevels } from '@just-web/log'
-import osPlugin from '@just-web/os'
-import routePlugin from '@just-web/routes'
+import { osGizmo } from '@just-web/os'
+import { reactGizmo } from '@just-web/react'
+import { routesGizmo } from '@just-web/routes'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createColorLogReporter } from 'standard-log-color'
@@ -18,15 +19,19 @@ import './styles.css'
 
 void (async () => {
   const reporter = createColorLogReporter()
-  const app = await createApp({
+  const app = await justApp({
     name: 'play-react',
     log: { logLevel: logLevels.all, reporters: [reporter] }
-  }).extend(keyboardPlugin())
-    .extend(commandsPlugin())
-    .extend(osPlugin())
-    .extend(browserPlugin())
-    .extend(browserKeyboardPlugin())
-    .extend(routePlugin())
+  })
+    .with(keyboardGizmoFn())
+    .with(commandsGizmoFn())
+    .with(osGizmo)
+    .with(browserGizmoFn())
+    .with(browserKeyboardGizmo)
+    .with(reactGizmo)
+    .with(routesGizmo)
+    .create()
+
   createAppStore(app)
 
   app.commands.contributions.add({
@@ -39,7 +44,6 @@ void (async () => {
     createDocView(doc)
   })
 
-  // eslint-disable-next-line @typescript-eslint/no-misused-promises
   app.routes.register('/', () => {
     ReactDOM.render(
       <React.StrictMode>
@@ -61,5 +65,5 @@ void (async () => {
     )
   })
 
-  await app.start()
+  app.routes.navigate()
 })()

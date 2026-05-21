@@ -8,3 +8,12 @@ packages:
   - react/*
   - solid/*
   - tools/*
+allowBuilds:
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+  fsevents: true
+  puppeteer: true
+overrides:
+  babel-preset-current-node-syntax: 1.0.1
+  typescript: '~5.9.3'

@@ -1,12 +1,12 @@
-import { JustWebApp } from '@just-web/app'
-import { BrowserContext } from '@just-web/browser'
-import { CommandsContext } from '@just-web/commands'
-import { KeyboardContext } from '@just-web/keyboard'
-import { OSContext } from '@just-web/os'
-import { RoutesContext } from '@just-web/routes'
+import { JustApp } from '@just-web/app'
+import { BrowserGizmo } from '@just-web/browser'
+import { CommandsGizmo } from '@just-web/commands'
+import { KeyboardGizmo } from '@just-web/keyboard'
+import { OSGizmo } from '@just-web/os'
+import { RoutesGizmo } from '@just-web/routes'
 import { createStore, Store } from '@just-web/states'
 
-export type App = JustWebApp & KeyboardContext & OSContext & BrowserContext & CommandsContext & RoutesContext
+export type App = JustApp & KeyboardGizmo & OSGizmo & BrowserGizmo & CommandsGizmo & RoutesGizmo
 
 export interface AppStore<A = App> {
   app: A

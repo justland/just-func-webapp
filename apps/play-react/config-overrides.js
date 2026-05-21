@@ -5,7 +5,7 @@ module.exports = {
   },
   jest(config) {
     config.transformIgnorePatterns = [
-      '/node_modules/(?!(sentence-case)/)',
+      '/node_modules/(?!(sentence-case|no-case)/)',
       '^.+\\.module\\.(css|sass|scss)$'
     ]
     const esModules = ['react-command-palette/dist/themes']

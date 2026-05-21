@@ -1,5 +1,5 @@
 
 export interface Doc {
-  name: string,
+  name: string
   content: string
 }

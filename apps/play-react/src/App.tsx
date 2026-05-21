@@ -9,7 +9,8 @@ import { getStoreValue } from './store'
 const { CommandPalette } = lazyImport(
   import('@just-web/react-commands'),
   'CommandPalette',
-  (plugin) => getStoreValue().app.extend(plugin()),
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+  (plugin: any) => getStoreValue().app.extend(plugin()),
 )
 function App() {
   const [hasView] = useStore(store, s => s.views.length !== 0)

@@ -1,4 +1,5 @@
-import { lazyImport, useStore } from '@just-web/react'
+import { useStore } from '@just-web/react'
+import { lazyImport } from './lazyImport'
 import { Suspense } from 'react'
 import MainBackdrop from './components/MainBackdrop/MainBackdrop'
 import MainContent from './components/MainContent/MainContent'

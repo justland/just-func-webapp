@@ -4,6 +4,10 @@ module.exports = {
     return config
   },
   jest(config) {
+    config.transformIgnorePatterns = [
+      '/node_modules/(?!(sentence-case)/)',
+      '^.+\\.module\\.(css|sass|scss)$'
+    ]
     const esModules = ['react-command-palette/dist/themes']
     esModules.forEach(m => config.moduleNameMapper[m] = 'identity-obj-proxy')
     config.watchPlugins = [

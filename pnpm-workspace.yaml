@@ -16,3 +16,4 @@ allowBuilds:
   puppeteer: true
 overrides:
   babel-preset-current-node-syntax: 1.0.1
+  typescript: '~5.9.3'

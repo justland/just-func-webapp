@@ -1,17 +1,13 @@
 import { useStore } from '@just-web/react'
-import { lazyImport } from './lazyImport'
-import { Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import MainBackdrop from './components/MainBackdrop/MainBackdrop'
 import MainContent from './components/MainContent/MainContent'
 import { store } from './docViews/store'
-import { getStoreValue } from './store'
 
-const { CommandPalette } = lazyImport(
-  import('@just-web/react-commands'),
-  'CommandPalette',
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-  (plugin: any) => getStoreValue().app.extend(plugin()),
+const CommandPalette = lazy(() =>
+  import('@just-web/react-commands').then(m => ({ default: m.CommandPalette }))
 )
+
 function App() {
   const [hasView] = useStore(store, s => s.views.length !== 0)
 

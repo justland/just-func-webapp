@@ -1,6 +1,10 @@
 module.exports = {
   webpack(config) {
-    // console.info(config)
+    // Allow ESM packages (like @just-web/*) that import 'react/jsx-runtime' without .js extension
+    config.module.rules.unshift({
+      test: /\.m?js/,
+      resolve: { fullySpecified: false }
+    })
     return config
   },
   jest(config) {

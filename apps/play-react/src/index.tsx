@@ -6,7 +6,6 @@ import { keyboardGizmoFn } from '@just-web/keyboard'
 import { logLevels } from '@just-web/log'
 import { osGizmo } from '@just-web/os'
 import { reactGizmo } from '@just-web/react'
-import { reactCommandsGizmo } from '@just-web/react-commands'
 import { routesGizmo } from '@just-web/routes'
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -30,7 +29,6 @@ void (async () => {
     .with(browserGizmoFn())
     .with(browserKeyboardGizmo)
     .with(reactGizmo)
-    .with(reactCommandsGizmo)
     .with(routesGizmo)
     .create()
 

@@ -18,3 +18,21 @@ peerDependencyRules:
     'react-codemirror2-react-17>react': '18'
 overrides:
   typescript: '~5.9.3'
+  # Transitive dev-tooling advisories. Every parent below is already at its
+  # latest release, so bumping a direct dependency reaches none of them.
+  # Added 2026-09-01; drop each entry once the parent ships a patched range.
+  # shell-quote  GHSA critical, via npm-run-all2@6 (pulled by @just-web/repo-scripts)
+  shell-quote: '>=1.8.4 <2'
+  # fast-uri     via ajv@8 under @commitlint/config-validator@21
+  fast-uri: '>=3.1.5 <4'
+  # js-yaml      two majors in the tree; both need their own patched floor
+  js-yaml@3: '>=3.15.1 <4'
+  js-yaml@4: '>=4.3.1 <5'
+  # brace-expansion  three majors in the tree
+  brace-expansion@1: '>=1.1.16 <2'
+  brace-expansion@2: '>=2.1.2 <3'
+  brace-expansion@5: '>=5.0.7 <6'
+  # minimatch    only the 9.x copy is affected
+  minimatch@9: '>=9.0.7 <10'
+  # @babel/core  low severity, reached through babel-preset-solid and react-docgen
+  '@babel/core': '>=7.29.6 <8'

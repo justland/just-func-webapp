@@ -1,21 +1,10 @@
-ignorePatterns:
-  - ".storybook/**"
 ignores:
-  - "@babel/plugin-syntax-flow"
-  - autoprefixer
+  # used by name inside vitest.config.mts / turbo, not imported from source
   - jsdom
-  - postcss
-  - postcss-flexbugs-fixes
-  - "@babel/plugin-transform-react-jsx"
-  - "@storybook/*"
-  - "@testing-library/*"
-  - babel-loader
-  - fuse.js
   - npm-check-updates
-  - postcss-loader
-  - react
-  - react-dom
+  - "@testing-library/jest-dom"
+  # dependencies of the demo app that are not wired up yet
+  - fuse.js
   - solid-command-palette
   - solid-transition-group
   - tinykeys
-  - webpack

@@ -8,7 +8,7 @@ import { osGizmo } from '@just-web/os'
 import { reactGizmo } from '@just-web/react'
 import { routesGizmo } from '@just-web/routes'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot, type Root } from 'react-dom/client'
 import { createColorLogReporter } from 'standard-log-color'
 import App from './App'
 import { createDocument } from './docs/createDocument'
@@ -16,6 +16,13 @@ import { createDocView } from './docViews/createDocView'
 import reportWebVitals from './reportWebVitals'
 import { createAppStore } from './store'
 import './styles.css'
+
+let root: Root | undefined
+
+function getRoot() {
+	// biome-ignore lint/suspicious/noAssignInExpressions: lazily created once
+	return (root ??= createRoot(document.getElementById('root')!))
+}
 
 void (async () => {
 	const reporter = createColorLogReporter()
@@ -45,11 +52,10 @@ void (async () => {
 	})
 
 	app.routes.register('/', () => {
-		ReactDOM.render(
+		getRoot().render(
 			<React.StrictMode>
 				<App />
 			</React.StrictMode>,
-			document.getElementById('root'),
 		)
 
 		// If you want to start measuring performance in your app, pass a function
@@ -59,7 +65,7 @@ void (async () => {
 	})
 
 	app.routes.register('/error', () => {
-		ReactDOM.render(<div>something went wrong</div>, document.getElementById('root'))
+		getRoot().render(<div>something went wrong</div>)
 	})
 
 	app.routes.navigate()

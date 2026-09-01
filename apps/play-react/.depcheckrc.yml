@@ -1,6 +1,8 @@
 ignorePatterns:
   - ".storybook/**"
 ignores:
+  # rimraf 6 declares `bin` as a string, which depcheck cannot map to a name
+  - rimraf
   - "@rushstack/eslint-patch"
   - "@babel/plugin-syntax-flow"
   - "@babel/plugin-transform-react-jsx"

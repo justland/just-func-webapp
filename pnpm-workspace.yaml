@@ -14,6 +14,11 @@ allowBuilds:
   esbuild: true
   fsevents: true
   puppeteer: true
+peerDependencyRules:
+  allowedVersions:
+    # react-codemirror2-react-17 is a react-17 fork of react-codemirror2 whose
+    # peer range was never widened. It uses no react-17-only API.
+    'react-codemirror2-react-17>react': '18'
 overrides:
   babel-preset-current-node-syntax: 1.0.1
   typescript: '~5.9.3'

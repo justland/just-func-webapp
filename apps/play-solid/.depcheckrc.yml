@@ -1,4 +1,6 @@
 ignores:
+  # rimraf 6 declares `bin` as a string, which depcheck cannot map to a name
+  - rimraf
   # used by name inside vitest.config.mts / turbo, not imported from source
   - jsdom
   - npm-check-updates

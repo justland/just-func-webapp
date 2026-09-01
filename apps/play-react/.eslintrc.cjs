@@ -3,9 +3,11 @@ const path = require('path')
 
 module.exports = {
 	env: {
-		es6: true
+		es6: true,
+		node: true
 	},
-	extends: ['react-app', 'plugin:harmony/latest', 'plugin:yml/standard'],
+	// 'react-app' was shipped by react-scripts, which this package no longer uses.
+	extends: ['plugin:harmony/latest', 'plugin:yml/standard'],
 	overrides: [
 		{
 			extends: ['plugin:harmony/ts-prettier'],

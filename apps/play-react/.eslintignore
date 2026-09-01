@@ -1,5 +1,5 @@
 !.depcheckrc.yml
-!.storybook
+.storybook
 build
 dist*
 lib*

@@ -13,13 +13,12 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "types": [
-      "@types/jest"
+      "vitest/globals"
     ]
   },
   "include": [
     "src",
     "typings"
   ],
-  "references": [
-  ]
+  "references": []
 }

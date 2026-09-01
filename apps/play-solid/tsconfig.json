@@ -5,10 +5,13 @@
     "jsxImportSource": "solid-js",
     "outDir": "lib",
     "types": [
-      "@types/jest",
-      "vite/client"
+      "vite/client",
+      "vitest/globals"
     ],
-    "rootDir": "ts"
+    "rootDir": "ts",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true
   },
   "include": [
     "ts"

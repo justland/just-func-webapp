@@ -3,6 +3,7 @@ ignorePatterns:
 ignores:
   - "@babel/plugin-syntax-flow"
   - autoprefixer
+  - jsdom
   - postcss
   - postcss-flexbugs-fixes
   - "@babel/plugin-transform-react-jsx"
@@ -10,7 +11,6 @@ ignores:
   - "@testing-library/*"
   - babel-loader
   - fuse.js
-  - identity-obj-proxy
   - npm-check-updates
   - postcss-loader
   - react

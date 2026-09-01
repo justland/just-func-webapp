@@ -6,6 +6,6 @@ on:
 
 jobs:
   code:
-    uses: justland/.github/.github/workflows/pnpm-verify.yml@main
+    uses: justland/.github/.github/workflows/pnpm-verify.yml@v1
     with:
       os: '["ubuntu-latest"]'

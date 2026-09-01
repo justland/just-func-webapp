@@ -5,15 +5,23 @@ on:
 
 jobs:
   code:
-    uses: justland/.github/.github/workflows/pnpm-verify.yml@main
+    uses: justland/.github/.github/workflows/pnpm-verify.yml@v1
     with:
       os: '["ubuntu-latest"]'
 
-  # release:
-  #   uses: justland/.github/.github/workflows/pnpm-release-changeset.yml@main
-  #   needs: code
-  #   secrets: inherit
-
-  # docgen:
-  #     uses: justland/.github/.github/workflows/pnpm-docs.yml@main
-  #     needs: release
+  # Nothing in this repo is published: the root is `private` and both
+  # workspace packages are `private: true`. So this workflow verifies main
+  # and publishes nothing.
+  #
+  # If a package here is ever made public, add a release job below and give
+  # it its own `permissions:` block — the repo's default workflow token is
+  # `read`, and a caller with no block fails at resolution with a
+  # `startup_failure` and no logs:
+  #
+  #   release:
+  #     uses: justland/.github/.github/workflows/pnpm-release-changeset-oidc.yml@v1
+  #     needs: code
+  #     permissions:
+  #       id-token: write
+  #       contents: write
+  #       pull-requests: write

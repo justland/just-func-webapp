@@ -1,4 +1,4 @@
 import { createStore } from '@just-web/states'
-import { View } from './types'
+import type { View } from './types'
 
 export const store = createStore<{ views: View[] }>({ views: [] })

@@ -18,52 +18,49 @@ import { createAppStore } from './store'
 import './styles.css'
 
 void (async () => {
-  const reporter = createColorLogReporter()
-  const app = await justApp({
-    name: 'play-react',
-    log: { logLevel: logLevels.all, reporters: [reporter] }
-  })
-    .with(keyboardGizmoFn())
-    .with(commandsGizmoFn())
-    .with(osGizmo)
-    .with(browserGizmoFn())
-    .with(browserKeyboardGizmo)
-    .with(reactGizmo)
-    .with(routesGizmo)
-    .create()
+	const reporter = createColorLogReporter()
+	const app = await justApp({
+		name: 'play-react',
+		log: { logLevel: logLevels.all, reporters: [reporter] },
+	})
+		.with(keyboardGizmoFn())
+		.with(commandsGizmoFn())
+		.with(osGizmo)
+		.with(browserGizmoFn())
+		.with(browserKeyboardGizmo)
+		.with(reactGizmo)
+		.with(routesGizmo)
+		.create()
 
-  createAppStore(app)
+	createAppStore(app)
 
-  app.commands.contributions.add({
-    id: 'app.newDocument',
-    title: 'Create a new document'
-  })
+	app.commands.contributions.add({
+		id: 'app.newDocument',
+		title: 'Create a new document',
+	})
 
-  app.commands.handlers.register('app.newDocument', () => {
-    const doc = createDocument()
-    createDocView(doc)
-  })
+	app.commands.handlers.register('app.newDocument', () => {
+		const doc = createDocument()
+		createDocView(doc)
+	})
 
-  app.routes.register('/', () => {
-    ReactDOM.render(
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>,
-      document.getElementById('root')
-    )
+	app.routes.register('/', () => {
+		ReactDOM.render(
+			<React.StrictMode>
+				<App />
+			</React.StrictMode>,
+			document.getElementById('root'),
+		)
 
-    // If you want to start measuring performance in your app, pass a function
-    // to log results (for example: reportWebVitals(console.log))
-    // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-    reportWebVitals()
-  })
+		// If you want to start measuring performance in your app, pass a function
+		// to log results (for example: reportWebVitals(console.log))
+		// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+		reportWebVitals()
+	})
 
-  app.routes.register('/error', () => {
-    ReactDOM.render(
-      <div>something went wrong</div>,
-      document.getElementById('root')
-    )
-  })
+	app.routes.register('/error', () => {
+		ReactDOM.render(<div>something went wrong</div>, document.getElementById('root'))
+	})
 
-  app.routes.navigate()
+	app.routes.navigate()
 })()

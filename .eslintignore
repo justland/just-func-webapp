@@ -1,6 +1,0 @@
-!.depcheckrc.yml
-!.storybook
-build
-dist*
-node_modules
-out*

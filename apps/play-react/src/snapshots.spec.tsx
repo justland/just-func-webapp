@@ -9,14 +9,14 @@ import * as PageStories from './stories/Page.stories'
 // `composeStories` is the documented replacement: it applies the same
 // decorators, args and parameters storybook applies in the browser.
 const suites = {
-  'Example/Button': composeStories(ButtonStories),
-  'Example/Header': composeStories(HeaderStories),
-  'Example/Page': composeStories(PageStories)
+	'Example/Button': composeStories(ButtonStories),
+	'Example/Header': composeStories(HeaderStories),
+	'Example/Page': composeStories(PageStories),
 }
 
 describe.each(Object.entries(suites))('%s', (_title, stories) => {
-  test.each(Object.entries(stories))('%s', (_name, Story) => {
-    const { container } = render(<Story />)
-    expect(container.firstChild).toMatchSnapshot()
-  })
+	test.each(Object.entries(stories))('%s', (_name, Story) => {
+		const { container } = render(<Story />)
+		expect(container.firstChild).toMatchSnapshot()
+	})
 })

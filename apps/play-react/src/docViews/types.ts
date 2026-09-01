@@ -1,10 +1,9 @@
-import { Doc } from '../docs/types'
+import type { Doc } from '../docs/types'
 
 export interface DocView {
-  type: 'doc'
-  id: string
-  doc: Doc
+	type: 'doc'
+	id: string
+	doc: Doc
 }
 
 export type View = DocView
-

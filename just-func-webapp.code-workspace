@@ -1,37 +1,37 @@
 {
-  "folders": [
-    {
-      "name": "just-func-webapp",
-      "path": "."
-    },
-    {
-      "name": "just-web-react",
-      "path": "../just-web-react"
-    },
-    {
-      "name": "just-web-solid",
-      "path": "../just-web-solid"
-    },
-    {
-      "name": "just-web",
-      "path": "../just-web"
-    },
-    {
-      "name": "just-func-typescript",
-      "path": "../just-func-typescript"
-    },
-    {
-      "name": ".github",
-      "path": "../.github"
-    }
-  ],
-  "settings": {
-    "files.associations": {
-      "**/common/config/rush/*.json": "jsonc",
-      "*.scss": "postcss",
-      "common/git-hooks/*": "shell",
-      "rush.json": "jsonc"
-    },
-    "typescript.tsdk": "just-func-webapp\\node_modules\\typescript\\lib"
-  }
+	"folders": [
+		{
+			"name": "just-func-webapp",
+			"path": "."
+		},
+		{
+			"name": "just-web-react",
+			"path": "../just-web-react"
+		},
+		{
+			"name": "just-web-solid",
+			"path": "../just-web-solid"
+		},
+		{
+			"name": "just-web",
+			"path": "../just-web"
+		},
+		{
+			"name": "just-func-typescript",
+			"path": "../just-func-typescript"
+		},
+		{
+			"name": ".github",
+			"path": "../.github"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"**/common/config/rush/*.json": "jsonc",
+			"*.scss": "postcss",
+			"common/git-hooks/*": "shell",
+			"rush.json": "jsonc"
+		},
+		"typescript.tsdk": "just-func-webapp\\node_modules\\typescript\\lib"
+	}
 }

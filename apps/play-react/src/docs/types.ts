@@ -1,5 +1,4 @@
-
 export interface Doc {
-  name: string
-  content: string
+	name: string
+	content: string
 }

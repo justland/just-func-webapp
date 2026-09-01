@@ -1,65 +1,45 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Storyshots Example/Button Large 1`] = `
+exports[`Example/Button > Large 1`] = `
 <button
-  className="storybook-button storybook-button--large storybook-button--secondary"
-  style={
-    Object {
-      "backgroundColor": undefined,
-    }
-  }
+  class="storybook-button storybook-button--large storybook-button--secondary"
   type="button"
 >
   Button
 </button>
 `;
 
-exports[`Storyshots Example/Button Primary 1`] = `
+exports[`Example/Button > Primary 1`] = `
 <button
-  className="storybook-button storybook-button--medium storybook-button--primary"
-  style={
-    Object {
-      "backgroundColor": undefined,
-    }
-  }
+  class="storybook-button storybook-button--medium storybook-button--primary"
   type="button"
 >
   Button
 </button>
 `;
 
-exports[`Storyshots Example/Button Secondary 1`] = `
+exports[`Example/Button > Secondary 1`] = `
 <button
-  className="storybook-button storybook-button--medium storybook-button--secondary"
-  style={
-    Object {
-      "backgroundColor": undefined,
-    }
-  }
+  class="storybook-button storybook-button--medium storybook-button--secondary"
   type="button"
 >
   Button
 </button>
 `;
 
-exports[`Storyshots Example/Button Small 1`] = `
+exports[`Example/Button > Small 1`] = `
 <button
-  className="storybook-button storybook-button--small storybook-button--secondary"
-  style={
-    Object {
-      "backgroundColor": undefined,
-    }
-  }
+  class="storybook-button storybook-button--small storybook-button--secondary"
   type="button"
 >
   Button
 </button>
 `;
 
-exports[`Storyshots Example/Header Logged In 1`] = `
+exports[`Example/Header > LoggedIn 1`] = `
 <header>
   <div
-    className="wrapper"
+    class="wrapper"
   >
     <div>
       <svg
@@ -70,7 +50,7 @@ exports[`Storyshots Example/Header Logged In 1`] = `
       >
         <g
           fill="none"
-          fillRule="evenodd"
+          fill-rule="evenodd"
         >
           <path
             d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -92,7 +72,7 @@ exports[`Storyshots Example/Header Logged In 1`] = `
     </div>
     <div>
       <span
-        className="welcome"
+        class="welcome"
       >
         Welcome, 
         <b>
@@ -101,12 +81,7 @@ exports[`Storyshots Example/Header Logged In 1`] = `
         !
       </span>
       <button
-        className="storybook-button storybook-button--small storybook-button--secondary"
-        style={
-          Object {
-            "backgroundColor": undefined,
-          }
-        }
+        class="storybook-button storybook-button--small storybook-button--secondary"
         type="button"
       >
         Log out
@@ -116,10 +91,10 @@ exports[`Storyshots Example/Header Logged In 1`] = `
 </header>
 `;
 
-exports[`Storyshots Example/Header Logged Out 1`] = `
+exports[`Example/Header > LoggedOut 1`] = `
 <header>
   <div
-    className="wrapper"
+    class="wrapper"
   >
     <div>
       <svg
@@ -130,7 +105,7 @@ exports[`Storyshots Example/Header Logged Out 1`] = `
       >
         <g
           fill="none"
-          fillRule="evenodd"
+          fill-rule="evenodd"
         >
           <path
             d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -152,23 +127,13 @@ exports[`Storyshots Example/Header Logged Out 1`] = `
     </div>
     <div>
       <button
-        className="storybook-button storybook-button--small storybook-button--secondary"
-        style={
-          Object {
-            "backgroundColor": undefined,
-          }
-        }
+        class="storybook-button storybook-button--small storybook-button--secondary"
         type="button"
       >
         Log in
       </button>
       <button
-        className="storybook-button storybook-button--small storybook-button--primary"
-        style={
-          Object {
-            "backgroundColor": undefined,
-          }
-        }
+        class="storybook-button storybook-button--small storybook-button--primary"
         type="button"
       >
         Sign up
@@ -178,11 +143,11 @@ exports[`Storyshots Example/Header Logged Out 1`] = `
 </header>
 `;
 
-exports[`Storyshots Example/Page Logged In 1`] = `
+exports[`Example/Page > LoggedIn 1`] = `
 <article>
   <header>
     <div
-      className="wrapper"
+      class="wrapper"
     >
       <div>
         <svg
@@ -193,7 +158,7 @@ exports[`Storyshots Example/Page Logged In 1`] = `
         >
           <g
             fill="none"
-            fillRule="evenodd"
+            fill-rule="evenodd"
           >
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -215,25 +180,13 @@ exports[`Storyshots Example/Page Logged In 1`] = `
       </div>
       <div>
         <button
-          className="storybook-button storybook-button--small storybook-button--secondary"
-          onClick={[Function]}
-          style={
-            Object {
-              "backgroundColor": undefined,
-            }
-          }
+          class="storybook-button storybook-button--small storybook-button--secondary"
           type="button"
         >
           Log in
         </button>
         <button
-          className="storybook-button storybook-button--small storybook-button--primary"
-          onClick={[Function]}
-          style={
-            Object {
-              "backgroundColor": undefined,
-            }
-          }
+          class="storybook-button storybook-button--small storybook-button--primary"
           type="button"
         >
           Sign up
@@ -293,10 +246,10 @@ exports[`Storyshots Example/Page Logged In 1`] = `
       .
     </p>
     <div
-      className="tip-wrapper"
+      class="tip-wrapper"
     >
       <span
-        className="tip"
+        class="tip"
       >
         Tip
       </span>
@@ -310,7 +263,7 @@ exports[`Storyshots Example/Page Logged In 1`] = `
       >
         <g
           fill="none"
-          fillRule="evenodd"
+          fill-rule="evenodd"
         >
           <path
             d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
@@ -325,11 +278,11 @@ exports[`Storyshots Example/Page Logged In 1`] = `
 </article>
 `;
 
-exports[`Storyshots Example/Page Logged Out 1`] = `
+exports[`Example/Page > LoggedOut 1`] = `
 <article>
   <header>
     <div
-      className="wrapper"
+      class="wrapper"
     >
       <div>
         <svg
@@ -340,7 +293,7 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
         >
           <g
             fill="none"
-            fillRule="evenodd"
+            fill-rule="evenodd"
           >
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -362,25 +315,13 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
       </div>
       <div>
         <button
-          className="storybook-button storybook-button--small storybook-button--secondary"
-          onClick={[Function]}
-          style={
-            Object {
-              "backgroundColor": undefined,
-            }
-          }
+          class="storybook-button storybook-button--small storybook-button--secondary"
           type="button"
         >
           Log in
         </button>
         <button
-          className="storybook-button storybook-button--small storybook-button--primary"
-          onClick={[Function]}
-          style={
-            Object {
-              "backgroundColor": undefined,
-            }
-          }
+          class="storybook-button storybook-button--small storybook-button--primary"
           type="button"
         >
           Sign up
@@ -440,10 +381,10 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
       .
     </p>
     <div
-      className="tip-wrapper"
+      class="tip-wrapper"
     >
       <span
-        className="tip"
+        class="tip"
       >
         Tip
       </span>
@@ -457,7 +398,7 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
       >
         <g
           fill="none"
-          fillRule="evenodd"
+          fill-rule="evenodd"
         >
           <path
             d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"

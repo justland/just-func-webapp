@@ -1,25 +1,15 @@
 {
-  "extends": "@just-web/repo-scripts/config/tsconfig.jsx.json",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ES2015"
-    ],
-    "outDir": "lib",
-    "rootDir": "src",
-    "skipLibCheck": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "types": [
-      "@types/jest"
-    ]
-  },
-  "include": [
-    "src",
-    "typings"
-  ],
-  "references": [
-  ]
+	"extends": "@just-web/repo-scripts/config/tsconfig.jsx.json",
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"lib": ["DOM", "DOM.Iterable", "ES2015"],
+		"outDir": "lib",
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"types": ["vitest/globals"]
+	},
+	"include": ["src", "typings"],
+	"references": []
 }

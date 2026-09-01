@@ -1,21 +1,12 @@
-ignorePatterns:
-  - ".storybook/**"
+# One entry per line, no wildcards: a blanket ignore hides dead dependencies.
+# Everything listed here was grepped for and is genuinely referenced somewhere
+# depcheck cannot see (a config value or a tsconfig `extends`).
 ignores:
-  - "@babel/plugin-syntax-flow"
-  - autoprefixer
-  - postcss
-  - postcss-flexbugs-fixes
-  - "@babel/plugin-transform-react-jsx"
-  - "@storybook/*"
-  - "@testing-library/*"
-  - babel-loader
-  - fuse.js
-  - identity-obj-proxy
-  - npm-check-updates
-  - postcss-loader
-  - react
-  - react-dom
-  - solid-command-palette
-  - solid-transition-group
-  - tinykeys
-  - webpack
+  # `extends` target of tsconfig.json
+  - "@just-web/repo-scripts"
+  # test.setupFiles in vitest.config.mts
+  - "@testing-library/jest-dom"
+  # test.environment in vitest.config.mts
+  - jsdom
+  # rimraf 6 declares `bin` as a string, which depcheck cannot map to a name
+  - rimraf

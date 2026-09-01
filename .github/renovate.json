@@ -1,36 +1,36 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Single updater, GitHub-native automerge, release-age soak. Policy is inline rather than inherited from github>unional/renovate-preset: that preset's published default.json is only {\"extends\": [\"config:base\", \":preserveSemverRanges\"]} and carries none of this policy, so extending it is inert (verified 2026-09-01). rebaseWhen is 'auto', not 'behind-base-branch': this repo has a merge queue and therefore strict_required_status_checks_policy off, so forced rebases would re-run the full matrix on every open PR each time main moves — the O(n^2) CI the queue exists to remove.",
-  "extends": ["config:recommended", ":preserveSemverRanges", ":semanticCommits"],
-  "minimumReleaseAge": "3 days",
-  "platformAutomerge": true,
-  "rebaseWhen": "auto",
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "automerge": false,
-      "additionalBranchPrefix": "major-"
-    },
-    {
-      "description": "React 19 is unreachable: @just-web/react@9 (latest) peers on react ^16 || ^17 || ^18, and react-codemirror2-react-17 is React-17-only. Drop this rule once @just-web/react declares a react ^19 peer.",
-      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
-      "allowedVersions": "<19"
-    }
-  ],
-  "vulnerabilityAlerts": {
-    "minimumReleaseAge": "1 day",
-    "automerge": true
-  },
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
-  }
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"description": "Single updater, GitHub-native automerge, release-age soak. Policy is inline rather than inherited from github>unional/renovate-preset: that preset's published default.json is only {\"extends\": [\"config:base\", \":preserveSemverRanges\"]} and carries none of this policy, so extending it is inert (verified 2026-09-01). rebaseWhen is 'auto', not 'behind-base-branch': this repo has a merge queue and therefore strict_required_status_checks_policy off, so forced rebases would re-run the full matrix on every open PR each time main moves — the O(n^2) CI the queue exists to remove.",
+	"extends": ["config:recommended", ":preserveSemverRanges", ":semanticCommits"],
+	"minimumReleaseAge": "3 days",
+	"platformAutomerge": true,
+	"rebaseWhen": "auto",
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"automerge": true
+		},
+		{
+			"matchDepTypes": ["devDependencies"],
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["major"],
+			"automerge": false,
+			"additionalBranchPrefix": "major-"
+		},
+		{
+			"description": "React 19 is unreachable: @just-web/react@9 (latest) peers on react ^16 || ^17 || ^18, and react-codemirror2-react-17 is React-17-only. Drop this rule once @just-web/react declares a react ^19 peer.",
+			"matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+			"allowedVersions": "<19"
+		}
+	],
+	"vulnerabilityAlerts": {
+		"minimumReleaseAge": "1 day",
+		"automerge": true
+	},
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true
+	}
 }

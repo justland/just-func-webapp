@@ -1,30 +1,20 @@
-ignorePatterns:
-  - ".storybook/**"
+# One entry per line, no wildcards: a blanket ignore hides dead dependencies.
+# Everything listed here was grepped for and is genuinely referenced somewhere
+# depcheck cannot see (a config value, a tsconfig `extends`, or a peer range).
 ignores:
-  - "@rushstack/eslint-patch"
-  - "@babel/plugin-syntax-flow"
-  - "@babel/plugin-transform-react-jsx"
+  # listed in .storybook/main.ts `addons`; addon-docs is also imported by
+  # src/stories/Introduction.mdx, which depcheck cannot parse
+  - "@storybook/addon-docs"
+  - "@storybook/addon-links"
+  # `extends` target of tsconfig.json
   - "@just-web/repo-scripts"
-  - "@storybook/*"
-  - "@testing-library/*"
-  - "@size-limit/*"
-  - "@types/jest"
-  - "@types/node"
-  - "@types/platform"
+  # peer dependency of @testing-library/react, declared so pnpm resolves one copy
+  - "@testing-library/dom"
+  # postcss.config.js plugin entries
   - autoprefixer
-  - babel-loader
-  - css-loader
-  - identity-obj-proxy
-  - jest-validate
-  - jest-watch-suspend
-  - jest-watch-toggle-config
-  - jest-watch-typeahead
-  - npm-check-updates
   - postcss
-  - react-refresh
-  - size-limit
-  - storybook-dark-mode
-  - storybook-css-modules-preset
-  - style-loader
-  - ts-jest
-  - webpack
+  - tailwindcss
+  # test.environment in vitest.config.mts
+  - jsdom
+  # rimraf 6 declares `bin` as a string, which depcheck cannot map to a name
+  - rimraf

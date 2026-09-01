@@ -4,7 +4,7 @@ import { lazy } from 'react'
 export function lazyImport<M extends Record<string, any>, K extends keyof M>(
 	importPlugin: Promise<M>,
 	key: K,
-	extendPlugin: (m: M['default']) => any
+	extendPlugin: (m: M['default']) => any,
 ) {
 	let cached: Promise<[M, any]> | undefined
 
@@ -26,6 +26,6 @@ export function lazyImport<M extends Record<string, any>, K extends keyof M>(
 
 	return {
 		[key]: Component,
-		getExtendingApp: () => cachedExtendingApp().then(([, extendedApp]) => extendedApp)
+		getExtendingApp: () => cachedExtendingApp().then(([, extendedApp]) => extendedApp),
 	} as { [P in K]: typeof Component } & { getExtendingApp: () => Promise<any> }
 }

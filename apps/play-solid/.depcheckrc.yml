@@ -1,12 +1,12 @@
+# One entry per line, no wildcards: a blanket ignore hides dead dependencies.
+# Everything listed here was grepped for and is genuinely referenced somewhere
+# depcheck cannot see (a config value or a tsconfig `extends`).
 ignores:
+  # `extends` target of tsconfig.json
+  - "@just-web/repo-scripts"
+  # test.setupFiles in vitest.config.mts
+  - "@testing-library/jest-dom"
+  # test.environment in vitest.config.mts
+  - jsdom
   # rimraf 6 declares `bin` as a string, which depcheck cannot map to a name
   - rimraf
-  # used by name inside vitest.config.mts / turbo, not imported from source
-  - jsdom
-  - npm-check-updates
-  - "@testing-library/jest-dom"
-  # dependencies of the demo app that are not wired up yet
-  - fuse.js
-  - solid-command-palette
-  - solid-transition-group
-  - tinykeys

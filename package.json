@@ -11,8 +11,6 @@
 		"lint": "turbo run lint",
 		"nuke": "turbo run nuke && pnpm nuke:local",
 		"nuke:local": "rimraf node_modules",
-		"postpack": "pinst --enable",
-		"prepack": "pinst --disable",
 		"prepare": "husky",
 		"react": "pnpm --filter=@just-func/play-react",
 		"solid": "pnpm --filter=@just-func/play-solid",
@@ -29,8 +27,6 @@
 		"@just-web/repo-scripts": "^0.3.1",
 		"@repobuddy/biome": "^2.3.1",
 		"husky": "^9.1.7",
-		"pinst": "^3.0.0",
-		"plop": "^3.1.1",
 		"turbo": "^2.10.12",
 		"typescript": "~5.9.3"
 	},

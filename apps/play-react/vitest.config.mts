@@ -10,7 +10,7 @@ export default defineConfig({
 		include: ['src/**/?(*.)+(spec|test|integrate|accept|system|unit).[jt]s?(x)'],
 		coverage: {
 			provider: 'v8',
-			include: ['src/**'],
+			include: ['src/**/*.{ts,tsx}'],
 			reporter: ['text', 'lcov', 'clover', 'json'],
 		},
 	},

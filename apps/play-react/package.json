@@ -3,30 +3,26 @@
   "version": "0.2.20",
   "private": true,
   "scripts": {
-    "build": "run-s tailwind:css build:ts build:react",
-    "build:ts": "tsc --noEmit",
-    "build:react": "react-app-rewired build",
+    "build": "vite build",
     "build:storybook": "build-storybook",
     "build:watch": "echo no build:watch",
     "chromatic": "npx chromatic --project-token=9693e88259d4",
-    "clean": "rimraf coverage build lib *.tsbuildinfo",
+    "clean": "rimraf coverage dist lib *.tsbuildinfo",
     "coverage": "react-app-rewired test --watchAll=false --coverage 2>&1",
     "depcheck": "depcheck",
-    "eject": "react-scripts eject",
+    "dev": "vite",
     "lint": "eslint --ext=ts,tsx,js,yaml,yml .",
     "nuke": "run-s clean nuke:local",
     "nuke:local": "rimraf node_modules || true",
+    "preview": "vite preview",
     "sb": "start-storybook -p 6006",
-    "start": "react-app-rewired start",
+    "start": "vite",
     "storybook": "start-storybook -p 6006",
-    "tailwind:css": "tailwind -i ./src/styles.css -o ./build/output.css 2>&1",
-    "tailwind:css:watch": "tailwind -i ./src/styles.css -o ./build/output.css --watch",
     "test": "react-app-rewired test --watchAll=false 2>&1",
-    "test:visual": "cross-env VISUAL_TEST=1 react-app-rewired test --watchAll=false",
     "test:watch": "react-app-rewired test",
-    "verify": "run-p build lint coverage depcheck",
-    "verify:build": "run-s clean build depcheck",
-    "verify:test": "run-s test test:visual"
+    "typecheck": "tsc --noEmit",
+    "verify": "run-p build typecheck lint coverage depcheck",
+    "verify:build": "run-s clean build typecheck depcheck"
   },
   "browserslist": {
     "production": [
@@ -93,6 +89,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/testing-library__jest-dom": "~5.14.3",
+    "@vitejs/plugin-react": "^6.1.1",
     "autoprefixer": "~10.4.4",
     "babel-loader": "~9.2.0",
     "chromatic": "~6.24.0",
@@ -108,7 +105,6 @@
     "npm-check-updates": "~16.4.0",
     "npm-run-all2": "^5.0.0",
     "postcss": "~8.4.12",
-    "preact": "~10.11.0",
     "puppeteer": "~19.2.0",
     "react-app-rewired": "~2.2.1",
     "react-refresh": "0.14.0",
@@ -120,6 +116,7 @@
     "tailwindcss": "~3.2.0",
     "ts-jest": "^27.1.3",
     "typescript": "^5.0.0",
+    "vite": "^8.2.2",
     "webpack": "^5.70.0"
   }
 }

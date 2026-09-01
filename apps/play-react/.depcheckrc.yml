@@ -6,6 +6,7 @@ ignores:
   - "@babel/plugin-transform-react-jsx"
   - "@just-web/repo-scripts"
   - "@storybook/*"
+  - tailwindcss
   - "@testing-library/*"
   - "@size-limit/*"
   - "@types/jest"

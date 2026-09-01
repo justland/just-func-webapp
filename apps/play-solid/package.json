@@ -20,8 +20,9 @@
     "storybook": "start-storybook -p 6006",
     "test": "jest 2>&1",
     "test:watch": "jest --watch",
-    "verify": "run-p build lint coverage depcheck",
-    "verify:build": "run-s clean build depcheck"
+    "typecheck": "tsc --noEmit",
+    "verify": "run-p build typecheck lint coverage depcheck",
+    "verify:build": "run-s clean build typecheck depcheck"
   },
   "dependencies": {
     "fuse.js": "~6.6.0",

@@ -20,7 +20,6 @@ import './styles.css'
 let root: Root | undefined
 
 function getRoot() {
-	// biome-ignore lint/suspicious/noAssignInExpressions: lazily created once
 	return (root ??= createRoot(document.getElementById('root')!))
 }
 

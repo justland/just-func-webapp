@@ -1,0 +1,49 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
+	"extends": ["@repobuddy/biome/recommended"],
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		// `useIgnoreFile` only reaches paths git ignores. Build output that is
+		// ignored per-app (or not yet ignored at all) still gets walked, and
+		// `biome check --write .` would then rewrite turbo's cache manifests.
+		// These entries make the exclusion independent of .gitignore.
+		"includes": [
+			"!**/CHANGELOG.md",
+			"!**/pnpm-lock.yaml",
+			"!**/__snapshots__",
+			"!**/.turbo",
+			"!**/coverage",
+			"!**/dist",
+			"!**/lib",
+			"!**/storybook-static"
+		]
+	},
+	"linter": {
+		"rules": {
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			},
+			"style": {
+				// Ships at `info`, which biome exits 0 on. Pinned to `error` so a
+				// bare `import ... from 'fs'` actually fails the lint task.
+				"useNodejsImportProtocol": "error"
+			}
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.css"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noUnknownAtRules": "off"
+					}
+				}
+			}
+		}
+	]
+}

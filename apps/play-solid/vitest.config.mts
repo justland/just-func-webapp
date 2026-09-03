@@ -17,6 +17,16 @@ export default defineConfig({
 			provider: 'v8',
 			include: ['ts/**/*.{ts,tsx}'],
 			reporter: ['text', 'lcov', 'clover', 'json'],
+			// A ratchet, not a target. Set to the level the suite already
+			// reaches so a regression fails the `coverage` task instead of
+			// only being printed. `functions` is omitted deliberately: the
+			// single spec exercises no function in `ts/`, so the honest
+			// floor is 0 and a 0 threshold would assert nothing.
+			thresholds: {
+				statements: 11,
+				branches: 12,
+				lines: 18,
+			},
 		},
 	},
 })

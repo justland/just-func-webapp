@@ -1,5 +1,5 @@
 {
-	"$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
+	"$schema": "https://unpkg.com/@changesets/config@4.0.0/schema.json",
 	"___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
 		"onlyUpdatePeerDependentsWhenOutOfRange": true,
 		"updateInternalDependents": "always"
@@ -11,6 +11,7 @@
 	"fixed": [[]],
 	"ignore": [],
 	"linked": [],
+	"privatePackages": { "version": true, "tag": false },
 	"title": "chore: version packages",
 	"updateInternalDependencies": "patch"
 }

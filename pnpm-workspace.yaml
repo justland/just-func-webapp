@@ -29,7 +29,7 @@ overrides:
   js-yaml@3: '>=3.15.1 <4'
   js-yaml@4: '>=4.3.1 <5'
   # brace-expansion  three majors in the tree
-  brace-expansion@1: '>=1.1.16 <2'
+  brace-expansion@1: '<6'
   brace-expansion@2: '>=2.1.2 <3'
   brace-expansion@5: '>=5.0.7 <6'
   # minimatch    only the 9.x copy is affected
@@ -47,3 +47,6 @@ overrides:
 # explicitly so the enforcement does not depend on that inference.
 minimumReleaseAge: 1440
 minimumReleaseAgeStrict: true
+minimumReleaseAgeExclude:
+  # Renovate security update: brace-expansion@5.0.12
+  - brace-expansion@5.0.12

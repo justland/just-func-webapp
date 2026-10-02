@@ -26,7 +26,7 @@ overrides:
   # fast-uri     via ajv@8 under @commitlint/config-validator@21
   fast-uri: '>=3.1.5 <4'
   # js-yaml      two majors in the tree; both need their own patched floor
-  js-yaml@3: '>=3.15.1 <4'
+  js-yaml@3: '<6'
   js-yaml@4: '>=4.3.1 <5'
   # brace-expansion  three majors in the tree
   brace-expansion@1: '<6'

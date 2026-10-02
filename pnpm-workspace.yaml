@@ -35,7 +35,7 @@ overrides:
   # minimatch    only the 9.x copy is affected
   minimatch@9: '>=9.0.7 <10'
   # @babel/core  low severity, reached through babel-preset-solid and react-docgen
-  '@babel/core': '>=7.29.6 <8'
+  '@babel/core': '<9'
 
 # Supply-chain soak: refuse packages published less than 24h ago, so a compromised
 # release has a window to be caught and unpublished before it reaches a build.

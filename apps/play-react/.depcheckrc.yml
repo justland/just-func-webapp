@@ -11,7 +11,7 @@ ignores:
   # peer dependency of @testing-library/react, declared so pnpm resolves one copy
   - "@testing-library/dom"
   # postcss.config.js plugin entries
-  - autoprefixer
+  - "@tailwindcss/postcss"
   - postcss
   - tailwindcss
   # test.environment in vitest.config.mts

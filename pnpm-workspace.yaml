@@ -17,7 +17,7 @@ peerDependencyRules:
     # peer range was never widened. It uses no react-17-only API.
     'react-codemirror2-react-17>react': '18'
 overrides:
-  typescript: '~5.9.3'
+  typescript: '~7.0.0'
   # Transitive dev-tooling advisories. Every parent below is already at its
   # latest release, so bumping a direct dependency reaches none of them.
   # Added 2026-09-01; drop each entry once the parent ships a patched range.

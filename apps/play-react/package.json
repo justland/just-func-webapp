@@ -37,7 +37,7 @@
 	},
 	"dependencies": {
 		"@headlessui/react": "^2.2.10",
-		"@just-web/app": "^7.3.2",
+		"@just-web/app": "^8.0.0",
 		"@just-web/browser": "^9.1.0",
 		"@just-web/browser-keyboard": "^9.1.0",
 		"@just-web/commands": "^7.3.3",

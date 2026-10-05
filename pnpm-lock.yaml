@@ -215,8 +215,8 @@ importers:
         specifier: ^8.0.0
         version: 8.1.1(typescript@7.0.2)
       '@just-web/browser':
-        specifier: ^9.1.0
-        version: 9.1.0(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)
+        specifier: ^10.0.0
+        version: 10.1.1(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)(typescript@7.0.2)
       '@just-web/browser-keyboard':
         specifier: ^9.1.0
         version: 9.1.0(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/commands@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/keyboard@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))(@just-web/states@7.3.0))(@just-web/states@7.3.0))(@just-web/keyboard@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))(@just-web/states@7.3.0))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))
@@ -1013,11 +1013,11 @@ packages:
       '@just-web/keyboard': ^7.3.3
       '@just-web/os': ^7.3.2
 
-  '@just-web/browser@9.1.0':
-    resolution: {integrity: sha512-xwv23xKOuF+nP6MO7sNg45FAxHRfvErVZeHQRyUNORMXsy16CjrEA0GsKKA9DXi05g8E9ynP1QiJKuduUj5uWg==}
+  '@just-web/browser@10.1.1':
+    resolution: {integrity: sha512-fcySfpK+1SVogEOysxJC3SvUplpM7g19/QttsYkI161oUmj7cSzFsbf13WzlsDHi9I9l9t5sfNZS5l5kzYdSaQ==}
     peerDependencies:
-      '@just-web/app': ^7.3.2
-      '@just-web/states': ^7.3.0
+      '@just-web/app': ^8.1.1
+      '@just-web/states': ^8.0.1
 
   '@just-web/commands@7.3.3':
     resolution: {integrity: sha512-deOmKrXzQpqeePzyZyu1g8VMa/BWuz63UvEnReOuY7WUAYhLV7QexUVUZIIuoD3Rgoftk2nHWYxhlGO4pZJHuQ==}
@@ -1026,10 +1026,10 @@ packages:
       '@just-web/keyboard': ^7.3.3
       '@just-web/states': ^7.3.0
 
-  '@just-web/fetch@2.0.1':
-    resolution: {integrity: sha512-QghrqqRTyqM292RJ6GmvDCfj9qT1eQ1P0/GLIFwZQMi3DE1ok7f+CX48uR9dMsFIFHD2mqGkMKSaG+kWzHyFPQ==}
+  '@just-web/fetch@2.0.5':
+    resolution: {integrity: sha512-R/Ol79eqEHajYVTOe6jkve52RdJCkgPXy3m5zcwxYR8Cc5WRSL+uZjJ8oWu0V+tx6PqJ7ud7f/hSglSPXC1FVg==}
     peerDependencies:
-      '@just-web/app': ^7.3.2
+      '@just-web/app': ^8.1.1
 
   '@just-web/id@7.3.2':
     resolution: {integrity: sha512-NUY8wFTVbGCBvMVjkEWx6KL2vy2du21VHD36hM/xtpeMRxDZyvQfQLNK1X6HWt2gtPNCMYSbDMQEGYarVV/L3A==}
@@ -4766,13 +4766,15 @@ snapshots:
       mousetrap: 1.6.5
       type-plus: 8.0.0-beta.7
 
-  '@just-web/browser@9.1.0(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)':
+  '@just-web/browser@10.1.1(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)(typescript@7.0.2)':
     dependencies:
       '@just-web/app': 8.1.1(typescript@7.0.2)
-      '@just-web/fetch': 2.0.1(@just-web/app@8.1.1(typescript@7.0.2))
+      '@just-web/fetch': 2.0.5(@just-web/app@8.1.1(typescript@7.0.2))
       '@just-web/states': 7.3.0
-      iso-error: 6.0.3
-      type-plus: 8.0.0-beta.7
+      iso-error: 7.0.0
+      type-plus: 8.0.0-beta.12(typescript@7.0.2)
+    transitivePeerDependencies:
+      - typescript
 
   '@just-web/commands@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/keyboard@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))(@just-web/states@7.3.0))(@just-web/states@7.3.0)':
     dependencies:
@@ -4783,7 +4785,7 @@ snapshots:
       tersify: 3.12.1
       type-plus: 8.0.0-beta.7
 
-  '@just-web/fetch@2.0.1(@just-web/app@8.1.1(typescript@7.0.2))':
+  '@just-web/fetch@2.0.5(@just-web/app@8.1.1(typescript@7.0.2))':
     dependencies:
       '@just-web/app': 8.1.1(typescript@7.0.2)
 

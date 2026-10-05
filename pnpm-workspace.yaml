@@ -27,7 +27,7 @@ overrides:
   fast-uri: '<5'
   # js-yaml      two majors in the tree; both need their own patched floor
   js-yaml@3: '<6'
-  js-yaml@4: '>=4.3.1 <5'
+  js-yaml@4: '<6'
   # brace-expansion  three majors in the tree
   brace-expansion@1: '<6'
   brace-expansion@2: '<6'

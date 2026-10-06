@@ -43,7 +43,7 @@
 		"@just-web/commands": "^7.3.3",
 		"@just-web/keyboard": "^7.3.3",
 		"@just-web/log": "^7.3.2",
-		"@just-web/os": "^7.3.2",
+		"@just-web/os": "^8.0.0",
 		"@just-web/react": "^9.0.4",
 		"@just-web/react-commands": "^9.0.4",
 		"@just-web/routes": "^7.2.3",

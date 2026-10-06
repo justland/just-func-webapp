@@ -47,7 +47,7 @@
 		"@just-web/react": "^9.0.4",
 		"@just-web/react-commands": "^9.0.4",
 		"@just-web/routes": "^7.2.3",
-		"@just-web/states": "^7.3.0",
+		"@just-web/states": "^8.0.0",
 		"codemirror": "~5.65.20",
 		"react": "^18.3.1",
 		"react-codemirror2-react-17": "~1.0.0",

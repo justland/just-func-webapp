@@ -40,7 +40,7 @@
 		"@just-web/app": "^8.0.0",
 		"@just-web/browser": "^10.0.0",
 		"@just-web/browser-keyboard": "^9.1.0",
-		"@just-web/commands": "^7.3.3",
+		"@just-web/commands": "^8.0.0",
 		"@just-web/keyboard": "^7.3.3",
 		"@just-web/log": "^7.3.2",
 		"@just-web/os": "^7.3.2",

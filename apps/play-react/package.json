@@ -42,7 +42,7 @@
 		"@just-web/browser-keyboard": "^9.1.0",
 		"@just-web/commands": "^7.3.3",
 		"@just-web/keyboard": "^7.3.3",
-		"@just-web/log": "^7.3.2",
+		"@just-web/log": "^8.0.0",
 		"@just-web/os": "^7.3.2",
 		"@just-web/react": "^9.0.4",
 		"@just-web/react-commands": "^9.0.4",

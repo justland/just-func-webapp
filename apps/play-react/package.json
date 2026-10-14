@@ -45,7 +45,7 @@
 		"@just-web/log": "^7.3.2",
 		"@just-web/os": "^7.3.2",
 		"@just-web/react": "^9.0.4",
-		"@just-web/react-commands": "^9.0.4",
+		"@just-web/react-commands": "^10.0.0",
 		"@just-web/routes": "^7.2.3",
 		"@just-web/states": "^7.3.0",
 		"codemirror": "~5.65.20",

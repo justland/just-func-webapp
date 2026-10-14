@@ -227,8 +227,8 @@ importers:
         specifier: ^7.3.3
         version: 7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))(@just-web/states@7.3.0)
       '@just-web/log':
-        specifier: ^7.3.2
-        version: 7.3.2
+        specifier: ^9.0.0
+        version: 9.0.0(typescript@7.0.2)
       '@just-web/os':
         specifier: ^7.3.2
         version: 7.3.2(@just-web/app@8.1.1(typescript@7.0.2))
@@ -999,9 +999,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@just-func/types@0.5.1':
-    resolution: {integrity: sha512-yP+XbIIT5qGI/6TOZ0lRFHq2UubCfpf+2EKQPhEwOGsvh1vJTdDTPGyNWYHmLMLT5jx8h/SR3mAAVDmYyAjpwA==}
-
   '@just-func/types@0.6.1':
     resolution: {integrity: sha512-uIE3xNCNcyIsM/YhOAEEh8xNwDhcT5KMM6F4R/aQGVijt6sMePjd7CDPeVrXd2XFks2nGiin/cEMTYhAIaXa6A==}
 
@@ -1034,11 +1031,12 @@ packages:
     peerDependencies:
       '@just-web/app': ^8.1.1
 
-  '@just-web/id@7.3.2':
-    resolution: {integrity: sha512-NUY8wFTVbGCBvMVjkEWx6KL2vy2du21VHD36hM/xtpeMRxDZyvQfQLNK1X6HWt2gtPNCMYSbDMQEGYarVV/L3A==}
-
   '@just-web/id@8.1.1':
     resolution: {integrity: sha512-dSP8htIP0hD86k8O0Kobs7KctAd9fKSvPU5WjsF06zA9Y/4Rqee/7B8CfgMIuBFSq5dXPd0wpNszq6NIcw3BsA==}
+
+  '@just-web/id@9.0.0':
+    resolution: {integrity: sha512-a6CTCeSqITgK51a8NfoapD9+NY0VZAX3ZnII02B0sMuHplVHO0sbN1SwagmBWufKKx68loqtcVLnqmn7dH0TiA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
 
   '@just-web/keyboard@7.3.3':
     resolution: {integrity: sha512-Cq7VcSQsM0wVCFwzx2ZTi/thwNdVUtB0aLE9PJgH2ZBSZpcbDaEpG1WzD+/WcEpW8fF1MRKqWOAKP/G3EfXpYw==}
@@ -1047,11 +1045,12 @@ packages:
       '@just-web/os': ^7.3.2
       '@just-web/states': ^7.3.0
 
-  '@just-web/log@7.3.2':
-    resolution: {integrity: sha512-YVA0ajjagePUPzCkM3Z8S7URRJ5MI5lWgQi3ozfy9oibVfnWds06pQ/4NTbG7un2yLwRHLkNN4U35nRwcvc+tA==}
-
   '@just-web/log@8.1.1':
     resolution: {integrity: sha512-ToBmU8zrj1/lOBdAPRV5SVwPrnCbyvw+ujXATLoGoCcJ5RzUkPz16aIFC8+yKCjMSpIWhm5sCB8jOUnjs3vDqg==}
+
+  '@just-web/log@9.0.0':
+    resolution: {integrity: sha512-Wsiq+ZCeluuKfP6AsMTtqfK1TgM94ca/ETPQP79xiV66hfwYFjH0k7osNFVopnzlwvch84SEsWOpJmHnW33mVw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
 
   '@just-web/os@7.3.2':
     resolution: {integrity: sha512-ToFDjECfaFM7tKWN8lP1pdzy/l6rLQMozqDMm9JvV8apTfUl2m0JLHdsjhRb+wv+kIYEkqDkB2zK/bfusgYGrg==}
@@ -2051,12 +2050,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@unional/gizmo@2.3.0':
-    resolution: {integrity: sha512-n8KXBTFSLrpv6QYn+6YLd3TC8I1sxb7MM/UC8jWNQwBs351LBH8nTEhx1l2xKNq65XPOR3o4KNc+pU8/wxdPMw==}
-    engines: {node: '>= 14.16'}
-
   '@unional/gizmo@3.0.1':
     resolution: {integrity: sha512-gZMtQPMMxF+7ENz0Vxv4zIWzYU8YPjmx5Wf9A/+797/4stB7j9LXF257j6VUfOSqucVJhslx+iTaWjx5rfq6wg==}
+    engines: {node: '>= 20'}
+
+  '@unional/gizmo@3.0.2':
+    resolution: {integrity: sha512-JHYVz1MVcdd0TzqTdWgZ7qSwH3McUwLH8ayZv7lLDYhjFR7imZB/GbqYVBRwMuC0OE6rJ24BTZtaKmHZ7kI9Yw==}
     engines: {node: '>= 20'}
 
   '@vitejs/plugin-react@6.1.1':
@@ -2954,10 +2953,6 @@ packages:
     resolution: {integrity: sha512-FFUtZMpoZ8RqHS3XeXEmHWLA4thH+ZxCv2lOiPIn1Xc7CxrqhWzNSDzD+/chS/zbYezmiwWLdQC09JdQKmthOw==}
     engines: {node: '>=20'}
 
-  iso-error@6.0.3:
-    resolution: {integrity: sha512-QVdiQdEbZ3aiW7KMxenB0jvKygpiy9FMjitW6q6DaGXbVjLiu3zYPmrKG/Jts7xTXSIrZ8Wrst0KaS+r9+ys7g==}
-    engines: {node: '>= 10'}
-
   iso-error@7.0.0:
     resolution: {integrity: sha512-GyHH/0Xyug/vO9LOr5zKI3fyEAAJuBuXYNZE+Fs5DmpUmH4oRbcR8aYyql+MGi8CY53qPcU1bNJEjC5QsesFhA==}
     engines: {node: '>= 20'}
@@ -3651,9 +3646,6 @@ packages:
     peerDependencies:
       standard-log: '>=11.0.1'
 
-  standard-log@12.1.2:
-    resolution: {integrity: sha512-vFTFTkiZhHg8PGpp7wnOPJsQQsO2DMX1bnEAVms8LF9IdJWNGGMD+1btV5pWUkFb7p/qDHUhZqN/do+nsg0rPQ==}
-
   standard-log@13.3.1:
     resolution: {integrity: sha512-WcDZypKwq35deXwUV1/ttKodpijdGYSaRVVPHHGNtAIPbvS4rC6xIs1faPtXEUBD33W4RdtJKCZ7/oV1uIrQFw==}
 
@@ -3851,11 +3843,17 @@ packages:
     resolution: {integrity: sha512-AswgMPnpOoaVZHrrSBejETzEbuIA69OVGwfkHwfrY0A23VjWXBANzgq9+OymWOHAIArB7D1+1z498WY8fGg1Jw==}
     hasBin: true
 
-  type-plus@5.6.0:
-    resolution: {integrity: sha512-LAIvZzs6mKXYHzwRfGeOuWKsE5jHndwWlLheulMl6eWDSGa1bfZCd0aLQSMgP3HZTbazx/P2UumCqtOz5AMctA==}
-
   type-plus@7.6.2:
     resolution: {integrity: sha512-qUlXv9Y0/W56pg38m275IMD3WA03QbVoqNY16S3kmwtuA4gOT2iheyUdOp8NWrmXWpf7om98hzr7AZD/eW2jLA==}
+
+  type-plus@8.0.0:
+    resolution: {integrity: sha512-wYKemYpT2XPgZyqZUvo6pT0ZiwWHcLJMyR68ZjY4IB96ozUpxrb6M7pj9xYzNcBHWG4r17WqXnkGRQZrHAWs7A==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      typescript: ~7.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   type-plus@8.0.0-beta.12:
     resolution: {integrity: sha512-isf19V90L8JOn9VBWWwUfH8DU6G3dfPptr3R+JtraYWHqLAsXYI2f9x1HZVTkajrkSffdEbetXUXf7FcIjSIRg==}
@@ -3904,9 +3902,6 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
-
-  upper-case@2.0.2:
-    resolution: {integrity: sha512-KgdgDGJt2TpuwBUIjgG6lzw2GWFRCW9Qkfkiv0DxqHHLYJHmtmdUIKcZd8rHgFSjopVTlw6ggzCm1b8MFQwikg==}
 
   use-sync-external-store@1.6.0:
     resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
@@ -4827,10 +4822,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@just-func/types@0.5.1':
-    dependencies:
-      type-plus: 5.6.0
-
   '@just-func/types@0.6.1(typescript@7.0.2)':
     dependencies:
       type-plus: 8.0.0-beta.12(typescript@7.0.2)
@@ -4879,13 +4870,15 @@ snapshots:
     dependencies:
       '@just-web/app': 8.1.1(typescript@7.0.2)
 
-  '@just-web/id@7.3.2':
-    dependencies:
-      '@unional/gizmo': 2.3.0
-
   '@just-web/id@8.1.1(typescript@7.0.2)':
     dependencies:
       '@unional/gizmo': 3.0.1(typescript@7.0.2)
+    transitivePeerDependencies:
+      - typescript
+
+  '@just-web/id@9.0.0(typescript@7.0.2)':
+    dependencies:
+      '@unional/gizmo': 3.0.2(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -4896,17 +4889,18 @@ snapshots:
       '@just-web/states': 7.3.0
       type-plus: 8.0.0-beta.7
 
-  '@just-web/log@7.3.2':
-    dependencies:
-      '@just-web/id': 7.3.2
-      '@unional/gizmo': 2.3.0
-      standard-log: 12.1.2
-      type-plus: 8.0.0-beta.7
-
   '@just-web/log@8.1.1(typescript@7.0.2)':
     dependencies:
       '@just-web/id': 8.1.1(typescript@7.0.2)
       '@unional/gizmo': 3.0.1(typescript@7.0.2)
+      standard-log: 13.3.1(typescript@7.0.2)
+    transitivePeerDependencies:
+      - typescript
+
+  '@just-web/log@9.0.0(typescript@7.0.2)':
+    dependencies:
+      '@just-web/id': 9.0.0(typescript@7.0.2)
+      '@unional/gizmo': 3.0.2(typescript@7.0.2)
       standard-log: 13.3.1(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
@@ -5705,13 +5699,15 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@unional/gizmo@2.3.0':
-    dependencies:
-      type-plus: 8.0.0-beta.7
-
   '@unional/gizmo@3.0.1(typescript@7.0.2)':
     dependencies:
       type-plus: 8.0.0-beta.12(typescript@7.0.2)
+    transitivePeerDependencies:
+      - typescript
+
+  '@unional/gizmo@3.0.2(typescript@7.0.2)':
+    dependencies:
+      type-plus: 8.0.0(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -6498,8 +6494,6 @@ snapshots:
 
   isexe@4.0.0: {}
 
-  iso-error@6.0.3: {}
-
   iso-error@7.0.0: {}
 
   istanbul-lib-coverage@3.2.2: {}
@@ -7200,14 +7194,6 @@ snapshots:
       supports-color: 8.1.1
       unpartial: 1.0.5
 
-  standard-log@12.1.2:
-    dependencies:
-      '@just-func/types': 0.5.1
-      iso-error: 6.0.3
-      ms: 2.1.3
-      type-plus: 7.6.2
-      upper-case: 2.0.2
-
   standard-log@13.3.1(typescript@7.0.2):
     dependencies:
       '@just-func/types': 0.6.1(typescript@7.0.2)
@@ -7399,15 +7385,16 @@ snapshots:
       '@turbo/windows-64': 2.10.12
       '@turbo/windows-arm64': 2.10.12
 
-  type-plus@5.6.0:
-    dependencies:
-      tersify: 3.12.1
-      unpartial: 1.0.5
-
   type-plus@7.6.2:
     dependencies:
       tersify: 3.12.1
       unpartial: 1.0.5
+
+  type-plus@8.0.0(typescript@7.0.2):
+    dependencies:
+      unpartial: 1.0.8
+    optionalDependencies:
+      typescript: 7.0.2
 
   type-plus@8.0.0-beta.12(typescript@7.0.2):
     dependencies:
@@ -7471,10 +7458,6 @@ snapshots:
       browserslist: 4.28.8
       escalade: 3.2.0
       picocolors: 1.1.1
-
-  upper-case@2.0.2:
-    dependencies:
-      tslib: 2.8.1
 
   use-sync-external-store@1.6.0(react@18.3.1):
     dependencies:

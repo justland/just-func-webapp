@@ -215,8 +215,8 @@ importers:
         specifier: ^8.0.0
         version: 8.1.1(typescript@7.0.2)
       '@just-web/browser':
-        specifier: ^10.0.0
-        version: 10.1.1(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)(typescript@7.0.2)
+        specifier: ^11.0.0
+        version: 11.0.0(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)(typescript@7.0.2)
       '@just-web/browser-keyboard':
         specifier: ^9.1.0
         version: 9.1.0(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/commands@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/keyboard@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))(@just-web/states@7.3.0))(@just-web/states@7.3.0))(@just-web/keyboard@7.3.3(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))(@just-web/states@7.3.0))(@just-web/os@7.3.2(@just-web/app@8.1.1(typescript@7.0.2)))
@@ -1016,11 +1016,12 @@ packages:
       '@just-web/keyboard': ^7.3.3
       '@just-web/os': ^7.3.2
 
-  '@just-web/browser@10.1.1':
-    resolution: {integrity: sha512-fcySfpK+1SVogEOysxJC3SvUplpM7g19/QttsYkI161oUmj7cSzFsbf13WzlsDHi9I9l9t5sfNZS5l5kzYdSaQ==}
+  '@just-web/browser@11.0.0':
+    resolution: {integrity: sha512-k8HtSpDwP7cX+95uQ8v8ojV0VZtD0JPBGjV0ixepbCIOodkhWCWn4zGTnkhArqFrFFkEPOquwFmiX3OPMc79lg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      '@just-web/app': ^8.1.1
-      '@just-web/states': ^8.0.1
+      '@just-web/app': ^9.0.0
+      '@just-web/states': ^9.0.0
 
   '@just-web/commands@7.3.3':
     resolution: {integrity: sha512-deOmKrXzQpqeePzyZyu1g8VMa/BWuz63UvEnReOuY7WUAYhLV7QexUVUZIIuoD3Rgoftk2nHWYxhlGO4pZJHuQ==}
@@ -1029,10 +1030,11 @@ packages:
       '@just-web/keyboard': ^7.3.3
       '@just-web/states': ^7.3.0
 
-  '@just-web/fetch@2.0.5':
-    resolution: {integrity: sha512-R/Ol79eqEHajYVTOe6jkve52RdJCkgPXy3m5zcwxYR8Cc5WRSL+uZjJ8oWu0V+tx6PqJ7ud7f/hSglSPXC1FVg==}
+  '@just-web/fetch@3.0.0':
+    resolution: {integrity: sha512-km0bLk9as9QEutJ6Jf3Ir86JNAfgKmkeSPvNu+wGtFh4T/AQwWb0auw0aridDx/MySpcPiswO+Dme4+3uH3caw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      '@just-web/app': ^8.1.1
+      '@just-web/app': ^9.0.0
 
   '@just-web/id@7.3.2':
     resolution: {integrity: sha512-NUY8wFTVbGCBvMVjkEWx6KL2vy2du21VHD36hM/xtpeMRxDZyvQfQLNK1X6HWt2gtPNCMYSbDMQEGYarVV/L3A==}
@@ -3857,6 +3859,15 @@ packages:
   type-plus@7.6.2:
     resolution: {integrity: sha512-qUlXv9Y0/W56pg38m275IMD3WA03QbVoqNY16S3kmwtuA4gOT2iheyUdOp8NWrmXWpf7om98hzr7AZD/eW2jLA==}
 
+  type-plus@8.0.0:
+    resolution: {integrity: sha512-wYKemYpT2XPgZyqZUvo6pT0ZiwWHcLJMyR68ZjY4IB96ozUpxrb6M7pj9xYzNcBHWG4r17WqXnkGRQZrHAWs7A==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      typescript: ~7.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   type-plus@8.0.0-beta.12:
     resolution: {integrity: sha512-isf19V90L8JOn9VBWWwUfH8DU6G3dfPptr3R+JtraYWHqLAsXYI2f9x1HZVTkajrkSffdEbetXUXf7FcIjSIRg==}
     peerDependencies:
@@ -4856,13 +4867,13 @@ snapshots:
       mousetrap: 1.6.5
       type-plus: 8.0.0-beta.7
 
-  '@just-web/browser@10.1.1(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)(typescript@7.0.2)':
+  '@just-web/browser@11.0.0(@just-web/app@8.1.1(typescript@7.0.2))(@just-web/states@7.3.0)(typescript@7.0.2)':
     dependencies:
       '@just-web/app': 8.1.1(typescript@7.0.2)
-      '@just-web/fetch': 2.0.5(@just-web/app@8.1.1(typescript@7.0.2))
+      '@just-web/fetch': 3.0.0(@just-web/app@8.1.1(typescript@7.0.2))
       '@just-web/states': 7.3.0
       iso-error: 7.0.0
-      type-plus: 8.0.0-beta.12(typescript@7.0.2)
+      type-plus: 8.0.0(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -4875,7 +4886,7 @@ snapshots:
       tersify: 3.12.1
       type-plus: 8.0.0-beta.7
 
-  '@just-web/fetch@2.0.5(@just-web/app@8.1.1(typescript@7.0.2))':
+  '@just-web/fetch@3.0.0(@just-web/app@8.1.1(typescript@7.0.2))':
     dependencies:
       '@just-web/app': 8.1.1(typescript@7.0.2)
 
@@ -7408,6 +7419,12 @@ snapshots:
     dependencies:
       tersify: 3.12.1
       unpartial: 1.0.5
+
+  type-plus@8.0.0(typescript@7.0.2):
+    dependencies:
+      unpartial: 1.0.8
+    optionalDependencies:
+      typescript: 7.0.2
 
   type-plus@8.0.0-beta.12(typescript@7.0.2):
     dependencies:
